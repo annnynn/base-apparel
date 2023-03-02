@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>base-apparel</title>
+</head>
+
+<body>
+    <section class="main">
+        <header>
+            <div class="logo">
+                <img src="/images/logo.svg" alt="">
+            </div>
+            <section class="image-wrapper">
+                <img class="img-mobile" src="/images/hero-mobile.jpg" alt="">
+            </section>
+        </header>
+        <article>
+            <span>WE'RE</span>
+            <h1>COMING SOON</h1>
+            <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay
+                up-to-date with announcements and our launch deals.</p>
+            <div class="input-container">
+                <form id="form" action="">
+                    <input class="email" type="text" name="email" placeholder="Email Address" id="email"
+                        onclick="isEmpty()">
+                    <p class="error" style="color:red;visibility:hidden;">Please provide a valid email</p>
+                    <img id="submit" class="arrow" src="/images/icon-arrow.svg" alt="">
+                </form>
+            </div>
+        </article>
+    </section>
+    <section class="image-wrapper">
+        <img class="img-dekstop" src="/images/hero-desktop.jpg" alt="">
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
