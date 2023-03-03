@@ -97,19 +97,19 @@
      font-size: 14px;
      font-weight: 400;
      line-height: 28px;
-     
+
  }
 
- input:focus{
-    outline: none;
+ input:focus {
+     outline: none;
  }
 
- #email{
-    border-radius: 28px;
-    background-repeat: no-repeat;
-    background-position: 250px;
-    outline-offset: none;
-    border: 1px solid #CE9898;
+ #email {
+     border-radius: 28px;
+     background-repeat: no-repeat;
+     background-position: 250px;
+     outline-offset: none;
+     border: 1px solid #CE9898;
  }
 
  .input::placeholder {
@@ -123,40 +123,58 @@
  }
 
  button {
+     position: absolute;
+     left: 280px;
+     padding: 15px 25px 35px 28px;
+     border-radius: 28px;
+     width: 64px;
+     height: 49px;
+     border-radius: 28px;
+     border: 0;
+     cursor: pointer;
+     background-image: url(/images/icon-arrow.svg);
+     background-repeat: no-repeat;
+     background-position: 30px;
+     background-color: rgba(238, 139, 139, 1);
+     z-index: 2;
+     box-shadow: 0px 15px 20px 0px rgba(198, 110, 110, 0.2476);
+ }
+ .background{
     position: absolute;
     left: 280px;
-    padding: 15px 25px 36px 28px;
+    padding: 15px 25px 35px 28px;
     border-radius: 28px;
     width: 64px;
     height: 49px;
     border-radius: 28px;
-    background-color: var(--soft-red);
     border: 0;
     cursor: pointer;
-    background-image: url(/images/icon-arrow.svg);
-    background-repeat: no-repeat;
-    background-position: 30px;
-}
+    z-index: 1;
+    background-color: white;
+ }
 
-#error{
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 28px;
+ button:hover {
+   background-color: rgba(198, 110, 110, 0.2476);
+   
+ }
 
-    
-}
+ #error {
+     font-size: 13px;
+     font-weight: 400;
+     line-height: 28px;
+ }
 
-label{
-    margin-left: 25px;
-    margin-top: 4px;
-}
+ label {
+     margin-left: 25px;
+     margin-top: 4px;
+ }
 
-.input-container{
-    margin-top: 32px;
-}
+ .input-container {
+     margin-top: 32px;
+ }
 
  @media(min-width: 1440px) {
-    
+
 
      body {
          justify-content: space-between;
@@ -203,7 +221,7 @@ label{
          width: 100%;
          height: 100%;
          width: 610px;
-       
+
      }
 
      .logo {
@@ -222,8 +240,8 @@ label{
          border-radius: 28px;
      }
 
-     #form{
-        margin-top: 40px;
+     #form {
+         margin-top: 40px;
      }
 
      button {
@@ -231,7 +249,8 @@ label{
          padding: 16px 20px 36px 46px;
          border-radius: 28px;
          background-position: 45px;
-        
+
+
      }
 
  }
