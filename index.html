@@ -25,12 +25,11 @@
             <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay
                 up-to-date with announcements and our launch deals.</p>
             <div class="input-container">
-                <form id="form" action="">
-                    <input class="email" type="text" name="email" placeholder="Email Address" id="email"
-                        onclick="isEmpty()">
-                    <p class="error" style="color:red;visibility:hidden;">Please provide a valid email</p>
-                    <img id="submit" class="arrow" src="/images/icon-arrow.svg" alt="">
+                <form id="form" action="#">
+                    <input class="email" type="text" name="email" placeholder="Email Address" id="email" onclick="isEmpty()">
+                    <button type="button" id="submitArrow" onclick="validation()"></button>
                 </form>
+                <label id="error" style="color:red;visibility:hidden"></label>
             </div>
         </article>
     </section>
