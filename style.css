@@ -20,9 +20,16 @@
      align-items: center;
      font-size: 16px;
      font-family: 'Josefin Sans', sans-serif;
-     padding-top: 30px;
      height: 100vh;
-     background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+ }
+
+
+ .main {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding-top: 30px;
  }
 
  .img-dekstop {
@@ -54,6 +61,7 @@
      flex-direction: column;
      justify-content: center;
      align-items: center;
+
  }
 
  article span {
@@ -97,7 +105,7 @@
      font-size: 14px;
      font-weight: 400;
      line-height: 28px;
-
+     background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
  }
 
  input:focus {
@@ -108,12 +116,10 @@
      border-radius: 28px;
      background-repeat: no-repeat;
      background-position: 250px;
-     outline-offset: none;
-     border: 1px solid #CE9898;
+     border: 1px solid #CE9898;   
  }
 
  .input::placeholder {
-     color: hsla(0, 36%, 70%, 1);
      font-size: 16px;
  }
 
@@ -139,23 +145,24 @@
      z-index: 2;
      box-shadow: 0px 15px 20px 0px rgba(198, 110, 110, 0.2476);
  }
- .background{
-    position: absolute;
-    left: 280px;
-    padding: 15px 25px 35px 28px;
-    border-radius: 28px;
-    width: 64px;
-    height: 49px;
-    border-radius: 28px;
-    border: 0;
-    cursor: pointer;
-    z-index: 1;
-    background-color: white;
+
+ .background {
+     position: absolute;
+     left: 280px;
+     padding: 15px 25px 35px 28px;
+     border-radius: 28px;
+     width: 64px;
+     height: 49px;
+     border-radius: 28px;
+     border: 0;
+     cursor: pointer;
+     z-index: 1;
+     background-color: white;
  }
 
  button:hover {
-   background-color: rgba(198, 110, 110, 0.2476);
-   
+     background-color: rgba(198, 110, 110, 0.2476);
+
  }
 
  #error {
@@ -173,6 +180,16 @@
      margin-top: 32px;
  }
 
+ .background-pink {
+     background-image: url(/images/bg-pattern-desktop.svg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
+     height: 100%;
+     width: 100%;
+ }
+
  @media(min-width: 1440px) {
 
 
@@ -182,9 +199,16 @@
          align-items: unset;
          padding-top: 0;
          padding-left: 0;
-         background: linear-gradient(221.42deg, #FFF1F1 2.6%, #FFFFFF 96.36%);
+         background: linear-gradient(150.03deg, #FFFFFF 0%, #FFF4F4 84.51%);
 
+     }
 
+     .background-pink {
+         background-image: url(/images/bg-pattern-desktop.svg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         width: 59.9%;
      }
 
      article {
@@ -225,12 +249,14 @@
      }
 
      .logo {
-         margin-top: 75px;
+         margin-top: 0px;
          padding: 0;
      }
 
      .main {
          margin-left: 165px;
+         align-items: flex-start;
+         margin-top: 36px;
      }
 
      .input {
@@ -238,6 +264,10 @@
          width: 445px;
          height: 56px;
          border-radius: 28px;
+     }
+
+     .input-container {
+         margin-top: 0px;
      }
 
      #form {
@@ -249,8 +279,6 @@
          padding: 16px 20px 36px 46px;
          border-radius: 28px;
          background-position: 45px;
-
-
      }
 
  }

@@ -4,9 +4,6 @@ const error = document.getElementById("error");
 const submit = document.getElementById("submitArrow");
 
 
-
-
-
 document.getElementById("submitArrow").addEventListener('click', validation);
 document.getElementById("email").addEventListener('click', isEmpty);
 
